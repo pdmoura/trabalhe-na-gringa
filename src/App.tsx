@@ -24,6 +24,7 @@ import {
 import dolarRealImg from './assets/dolar-real.webp';
 import mockupGringaImg from './assets/mockup-gringa.webp';
 import garantiaImg from './assets/garantia.webp';
+import secureCheckoutImg from './assets/seguro.png';
 
 declare global {
   interface Window {
@@ -125,6 +126,8 @@ function App() {
                   <img 
                     src="https://res.cloudinary.com/dyqyb9ri8/image/upload/v1781677391/Captura_de_tela_2026-06-17_025014_remuw5.png" 
                     alt="Victoria Morais - História Real" 
+                    loading="eager"
+                    fetchPriority="high"
                     className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-1000 opacity-95"
                   />
                 </div>
@@ -218,6 +221,7 @@ function App() {
               <img 
                 src="https://res.cloudinary.com/dyqyb9ri8/image/upload/v1781680518/Captura_de_tela_2026-06-17_041310_f6cmq2.png" 
                 alt="A postagem que iniciou tudo" 
+                loading="lazy"
                 className="relative rounded-3xl w-full object-cover shadow-2xl border border-white/10 transform -rotate-2 hover:rotate-0 transition-transform duration-500"
               />
             </div>
@@ -241,10 +245,10 @@ function App() {
 
           {/* DMs e Comentários Grid */}
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <img src="https://res.cloudinary.com/dyqyb9ri8/image/upload/v1781684362/Captura_de_tela_2026-06-17_051831_pjvo9d.png" alt="Comentário" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
-            <img src="https://res.cloudinary.com/dyqyb9ri8/image/upload/v1781680404/Captura_de_tela_2026-06-17_040742_tawya8.png" alt="Comentário" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
-            <img src="https://res.cloudinary.com/dyqyb9ri8/image/upload/v1781684458/Captura_de_tela_2026-06-17_052037_y1nyy2.png" alt="Comentário" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
-            <img src="https://res.cloudinary.com/dyqyb9ri8/image/upload/v1781680260/Captura_de_tela_2026-06-17_040836_cqru3n.png" alt="Comentário" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
+            <img src="https://res.cloudinary.com/dyqyb9ri8/image/upload/v1781684362/Captura_de_tela_2026-06-17_051831_pjvo9d.png" alt="Comentário" loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
+            <img src="https://res.cloudinary.com/dyqyb9ri8/image/upload/v1781680404/Captura_de_tela_2026-06-17_040742_tawya8.png" alt="Comentário" loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
+            <img src="https://res.cloudinary.com/dyqyb9ri8/image/upload/v1781684458/Captura_de_tela_2026-06-17_052037_y1nyy2.png" alt="Comentário" loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
+            <img src="https://res.cloudinary.com/dyqyb9ri8/image/upload/v1781680260/Captura_de_tela_2026-06-17_040836_cqru3n.png" alt="Comentário" loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
           </div>
 
           {/* Estatísticas Virais */}
@@ -283,6 +287,7 @@ function App() {
                 <img 
                   src={dolarRealImg} 
                   alt="Dólares" 
+                  loading="lazy"
                   className="w-full max-w-md h-auto object-contain drop-shadow-2xl"
                 />
               </div>
@@ -468,6 +473,7 @@ function App() {
                 <img 
                   src={mockupGringaImg} 
                   alt="Mockup Guia Trabalhe na Gringa" 
+                  loading="lazy"
                   className="relative z-10 w-full max-h-[350px] lg:max-h-none object-contain mx-auto rounded-xl drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform -rotate-2 hover:rotate-0 transition-transform duration-500"
                 />
               </div>
@@ -604,6 +610,7 @@ function App() {
               <img 
                 src={garantiaImg}
                 alt="Garantia Incondicional de 7 Dias" 
+                loading="lazy"
                 className="w-48 h-auto drop-shadow-2xl"
               />
             </div>
@@ -615,8 +622,9 @@ function App() {
               
               <div className="pt-6">
                 <img 
-                  src="https://kalmeidadigital.my.canva.site/homeofficenagringa/_assets/media/83bcb25384ccee2f5cde124cd85a0135.png" 
+                  src={secureCheckoutImg}
                   alt="Checkout Seguro e Meios de Pagamento" 
+                  loading="lazy"
                   className="w-full max-w-md mx-auto md:mx-0 opacity-90 drop-shadow-2xl"
                 />
               </div>
