@@ -133,6 +133,8 @@ function App() {
                   <img 
                     src={victoriaHeroImg}
                     alt="Victoria Morais - História Real" 
+                    width={600}
+                    height={800}
                     loading="eager"
                     fetchPriority="high"
                     className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-1000 opacity-95"
@@ -228,6 +230,8 @@ function App() {
               <img 
                 src={victoriaPostImg}
                 alt="A postagem que iniciou tudo" 
+                width={600}
+                height={400}
                 loading="lazy"
                 className="relative rounded-3xl w-full object-cover shadow-2xl border border-white/10 transform -rotate-2 hover:rotate-0 transition-transform duration-500"
               />
@@ -252,10 +256,10 @@ function App() {
 
           {/* DMs e Comentários Grid */}
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <img src={people1Img} alt="Comentário" loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
-            <img src={people2Img} alt="Comentário" loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
-            <img src={people3Img} alt="Comentário" loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
-            <img src={people4Img} alt="Comentário" loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
+            <img src={people1Img} alt="Comentário" width={600} height={400} loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
+            <img src={people2Img} alt="Comentário" width={600} height={400} loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
+            <img src={people3Img} alt="Comentário" width={600} height={400} loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
+            <img src={people4Img} alt="Comentário" width={600} height={400} loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
           </div>
 
           {/* Estatísticas Virais */}
@@ -294,6 +298,8 @@ function App() {
                 <img 
                   src={dolarRealImg} 
                   alt="Dólares" 
+                  width={500}
+                  height={350}
                   loading="lazy"
                   className="w-full max-w-md h-auto object-contain drop-shadow-2xl"
                 />
@@ -341,6 +347,9 @@ function App() {
               <img 
                 src={victoriaHistoryImg}
                 alt="Victoria Morais" 
+                width={500}
+                height={600}
+                loading="lazy"
                 className="relative rounded-3xl w-full object-cover shadow-2xl border border-white/10"
               />
             </div>
@@ -480,6 +489,8 @@ function App() {
                 <img 
                   src={mockupGringaImg} 
                   alt="Mockup Guia Trabalhe na Gringa" 
+                  width={400}
+                  height={500}
                   loading="lazy"
                   className="relative z-10 w-full max-h-[350px] lg:max-h-none object-contain mx-auto rounded-xl drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform -rotate-2 hover:rotate-0 transition-transform duration-500"
                 />
@@ -617,6 +628,8 @@ function App() {
               <img 
                 src={garantiaImg}
                 alt="Garantia Incondicional de 7 Dias" 
+                width={192}
+                height={192}
                 loading="lazy"
                 className="w-48 h-auto drop-shadow-2xl"
               />
@@ -631,6 +644,8 @@ function App() {
                 <img 
                   src={secureCheckoutImg}
                   alt="Checkout Seguro e Meios de Pagamento" 
+                  width={448}
+                  height={60}
                   loading="lazy"
                   className="w-full max-w-md mx-auto md:mx-0 opacity-90 drop-shadow-2xl"
                 />
