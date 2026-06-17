@@ -21,6 +21,10 @@ import {
   Circle
 } from 'lucide-react';
 
+import dolarRealImg from './assets/dolar-real.webp';
+import mockupGringaImg from './assets/mockup-gringa.webp';
+import garantiaImg from './assets/garantia.webp';
+
 declare global {
   interface Window {
     gtag: any;
@@ -66,18 +70,8 @@ function App() {
             {/* Left Content */}
             <div className={`lg:w-1/2 flex flex-col items-start transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               
-              <div className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00C853] opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00C853]"></span>
-                </span>
-                <span className="text-[#00C853] text-xs font-bold tracking-widest uppercase">
-                  De Fortaleza para o Mundo
-                </span>
-              </div>
-              
               <h1 className="text-4xl lg:text-[3.5rem] font-bold text-white leading-[1.2] mb-6 tracking-tight">
-                Aprendi inglês sozinha, consegui uma vaga em uma empresa americana e hoje <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400 border-b-4 border-[#00C853]/30">recebo em dólar morando no Brasil.</span>
+                Aprendi inglês sozinha, consegui uma vaga em uma empresa americana e hoje <span className="text-[#00C853] drop-shadow-[0_0_15px_rgba(0,200,83,0.2)]">recebo em dólar morando no Brasil.</span>
               </h1>
               
               <p className="text-xl text-slate-400 mb-10 leading-relaxed max-w-xl font-light">
@@ -129,8 +123,8 @@ function App() {
                       <DollarSign className="w-4 h-4 md:w-6 md:h-6 text-[#00C853]" />
                     </div>
                     <div>
-                      <p className="text-[10px] md:text-xs text-slate-400 font-medium uppercase tracking-wider leading-none mb-0.5 md:mb-0">Moeda Forte</p>
-                      <p className="text-xs md:text-base text-white font-bold leading-none md:leading-normal">Receba em USD</p>
+                      <p className="text-[10px] md:text-xs text-slate-300 font-bold uppercase tracking-wider leading-none mb-0.5 md:mb-0">Moeda Forte</p>
+                      <p className="text-xs md:text-base text-white font-black leading-none md:leading-normal">Receba em USD</p>
                     </div>
                   </div>
                 </div>
@@ -139,8 +133,8 @@ function App() {
                   <div className="flex items-center gap-2 md:gap-3">
                     <span className="text-xl md:text-3xl leading-none">🇺🇸</span>
                     <div>
-                      <p className="text-[10px] md:text-xs text-slate-400 font-medium uppercase tracking-wider leading-none mb-0.5 md:mb-0">Contratos</p>
-                      <p className="text-xs md:text-base text-white font-bold leading-none md:leading-normal">EUA & Global</p>
+                      <p className="text-[10px] md:text-xs text-slate-300 font-bold uppercase tracking-wider leading-none mb-0.5 md:mb-0">Contratos</p>
+                      <p className="text-xs md:text-base text-white font-black leading-none md:leading-normal">EUA & Global</p>
                     </div>
                   </div>
                 </div>
@@ -151,8 +145,8 @@ function App() {
                       <Laptop className="w-4 h-4 md:w-6 md:h-6 text-blue-400" />
                     </div>
                     <div>
-                      <p className="text-[10px] md:text-xs text-slate-400 font-medium uppercase tracking-wider leading-none mb-0.5 md:mb-0">Modelo</p>
-                      <p className="text-xs md:text-base text-white font-bold leading-none md:leading-normal">100% Remoto</p>
+                      <p className="text-[10px] md:text-xs text-slate-300 font-bold uppercase tracking-wider leading-none mb-0.5 md:mb-0">Modelo</p>
+                      <p className="text-xs md:text-base text-white font-black leading-none md:leading-normal">100% Remoto</p>
                     </div>
                   </div>
                 </div>
@@ -274,7 +268,7 @@ function App() {
             <div className="lg:w-1/2">
               <div className="relative flex justify-center">
                 <img 
-                  src="./dolar-real.webp" 
+                  src={dolarRealImg} 
                   alt="Dólares" 
                   className="w-full max-w-md h-auto object-contain drop-shadow-2xl"
                 />
@@ -459,7 +453,7 @@ function App() {
                 {/* Back glow for Mockup */}
                 <div className="absolute inset-0 bg-[#00C853]/20 blur-[80px] rounded-full z-0"></div>
                 <img 
-                  src="/mockup-gringa.webp" 
+                  src={mockupGringaImg} 
                   alt="Mockup Guia Trabalhe na Gringa" 
                   className="relative z-10 w-full max-h-[350px] lg:max-h-none object-contain mx-auto rounded-xl drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform -rotate-2 hover:rotate-0 transition-transform duration-500"
                 />
@@ -595,7 +589,7 @@ function App() {
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
             <div className="md:w-1/3 flex justify-center">
               <img 
-                src="https://kalmeidadigital.my.canva.site/homeofficenagringa/_assets/media/27c4ef13cbe1f0363290a52228c0e7d2.png" 
+                src={garantiaImg}
                 alt="Garantia Incondicional de 7 Dias" 
                 className="w-48 h-auto drop-shadow-2xl"
               />
