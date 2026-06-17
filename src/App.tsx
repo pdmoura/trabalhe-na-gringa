@@ -25,6 +25,13 @@ import dolarRealImg from './assets/dolar-real.webp';
 import mockupGringaImg from './assets/mockup-gringa.webp';
 import garantiaImg from './assets/garantia.webp';
 import secureCheckoutImg from './assets/seguro.png';
+import victoriaHeroImg from './assets/victoria-hero.webp';
+import victoriaPostImg from './assets/victoria-instametrics.webp';
+import victoriaHistoryImg from './assets/victoria-history.webp';
+import people1Img from './assets/people1.webp';
+import people2Img from './assets/people2.webp';
+import people3Img from './assets/people3.webp';
+import people4Img from './assets/people4.webp';
 
 declare global {
   interface Window {
@@ -124,7 +131,7 @@ function App() {
                 <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-[#071426] group lg:max-h-[70vh] xl:max-h-[75vh]">
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0B1220] via-transparent to-transparent z-10"></div>
                   <img 
-                    src="https://res.cloudinary.com/dyqyb9ri8/image/upload/v1781677391/Captura_de_tela_2026-06-17_025014_remuw5.png" 
+                    src={victoriaHeroImg}
                     alt="Victoria Morais - História Real" 
                     loading="eager"
                     fetchPriority="high"
@@ -219,7 +226,7 @@ function App() {
             <div className="lg:w-1/2 relative group">
               <div className="absolute inset-0 bg-[#00C853]/10 blur-3xl rounded-full"></div>
               <img 
-                src="https://res.cloudinary.com/dyqyb9ri8/image/upload/v1781680518/Captura_de_tela_2026-06-17_041310_f6cmq2.png" 
+                src={victoriaPostImg}
                 alt="A postagem que iniciou tudo" 
                 loading="lazy"
                 className="relative rounded-3xl w-full object-cover shadow-2xl border border-white/10 transform -rotate-2 hover:rotate-0 transition-transform duration-500"
@@ -245,10 +252,10 @@ function App() {
 
           {/* DMs e Comentários Grid */}
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <img src="https://res.cloudinary.com/dyqyb9ri8/image/upload/v1781684362/Captura_de_tela_2026-06-17_051831_pjvo9d.png" alt="Comentário" loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
-            <img src="https://res.cloudinary.com/dyqyb9ri8/image/upload/v1781680404/Captura_de_tela_2026-06-17_040742_tawya8.png" alt="Comentário" loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
-            <img src="https://res.cloudinary.com/dyqyb9ri8/image/upload/v1781684458/Captura_de_tela_2026-06-17_052037_y1nyy2.png" alt="Comentário" loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
-            <img src="https://res.cloudinary.com/dyqyb9ri8/image/upload/v1781680260/Captura_de_tela_2026-06-17_040836_cqru3n.png" alt="Comentário" loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
+            <img src={people1Img} alt="Comentário" loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
+            <img src={people2Img} alt="Comentário" loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
+            <img src={people3Img} alt="Comentário" loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
+            <img src={people4Img} alt="Comentário" loading="lazy" className="rounded-2xl border border-white/10 shadow-xl opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-300 w-full h-auto object-cover" />
           </div>
 
           {/* Estatísticas Virais */}
@@ -332,7 +339,7 @@ function App() {
             <div className="lg:w-5/12 relative group">
               <div className="absolute inset-0 bg-[#00C853] rounded-3xl translate-x-3 translate-y-3 opacity-20 transition-transform duration-500"></div>
               <img 
-                src="https://res.cloudinary.com/dyqyb9ri8/image/upload/v1781682143/Captura_de_tela_2026-06-17_042859_orxk4u.png" 
+                src={victoriaHistoryImg}
                 alt="Victoria Morais" 
                 className="relative rounded-3xl w-full object-cover shadow-2xl border border-white/10"
               />
