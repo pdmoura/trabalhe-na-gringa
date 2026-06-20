@@ -154,7 +154,7 @@ function App() {
                   </div>
                 </div>
 
-                <div className="absolute top-1/2 -left-4 md:-left-8 lg:-left-10 z-20 bg-white/5 backdrop-blur-xl border border-white/10 p-2 lg:p-4 rounded-xl lg:rounded-2xl shadow-2xl animate-bounce" style={{animationDuration: '5s', animationDelay: '1s'}}>
+                <div className="absolute top-[60%] -left-4 md:-left-8 lg:-left-10 z-20 bg-white/5 backdrop-blur-xl border border-white/10 p-2 lg:p-4 rounded-xl lg:rounded-2xl shadow-2xl animate-bounce" style={{animationDuration: '5s', animationDelay: '1s'}}>
                   <div className="flex items-center gap-2 lg:gap-3">
                     <span className="text-xl lg:text-3xl leading-none">🇺🇸</span>
                     <div>
@@ -340,9 +340,9 @@ function App() {
         <div className="absolute -left-1/4 top-0 w-1/2 h-full bg-[#00C853]/5 blur-[150px] rounded-full pointer-events-none"></div>
 
         <div className="container mx-auto px-6 relative z-10">
-          <div className="flex flex-col lg:flex-row gap-20 items-center max-w-5xl mx-auto bg-white/5 border border-white/10 rounded-[2.5rem] p-8 lg:p-12 backdrop-blur-sm">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 xl:gap-24 items-center max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto bg-white/5 border border-white/10 rounded-3xl lg:rounded-[2.5rem] p-6 sm:p-8 lg:p-12 backdrop-blur-sm">
             
-            <div className="lg:w-5/12 relative group">
+            <div className="w-full max-w-sm md:max-w-md lg:max-w-none lg:w-5/12 xl:w-4/12 relative group mx-auto">
               <div className="absolute inset-0 bg-[#00C853] rounded-3xl translate-x-3 translate-y-3 opacity-20 transition-transform duration-500"></div>
               <img 
                 src={victoriaHistoryImg}
@@ -354,30 +354,35 @@ function App() {
               />
             </div>
 
-            <div className="lg:w-7/12">
-              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8 leading-tight">
+            <div className="w-full lg:w-7/12 xl:w-8/12 text-center lg:text-left">
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 lg:mb-8 leading-tight">
                 Há alguns anos eu também achava que isso era <span className="text-[#00C853]">impossível.</span>
               </h2>
-              
-              <div className="space-y-5">
+              <div className="mb-6 lg:mb-8 p-5 lg:p-6 rounded-2xl bg-white/5 border border-white/10 text-left">
+                <p className="text-base md:text-lg lg:text-xl text-slate-300 leading-relaxed">
+                  <span className="text-[#00C853]">Eu sou Victoria Morais, nascida em Fortaleza (CE) </span>e por muito tempo achei que meu caminho seria o mesmo de muitos profissionais da
+                  publicidade: trabalhar duro em agências, ganhar pouco no início da
+                  carreira e esperar anos para crescer profissionalmente.
+                </p>
+              </div>
+              <div className="space-y-4 lg:space-y-5 text-left">
                 {[
                   "Aprendi inglês sozinha, sem depender de cursos caros.",
-                  "Nunca sai da América Latina",
-                  "Nunca estudei em escola bilíngue.",
-                  "Encontrei as oportunidades internacionais por mim mesma.",
+                  "Nunca precisei sair do Brasil.",
+                  "Encontrei as oportunidades internacionais por conta própria.",
                   "Fui contratada por uma empresa americana.",
-                  "Hoje trabalho remotamente recebendo em dólar."
+                  "Hoje construí uma carreira internacional trabalhando do Brasil."
                 ].map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-4">
-                    <CheckCircle2 className="w-6 h-6 text-[#00C853] shrink-0 mt-0.5" />
-                    <span className="text-lg text-slate-300 font-light">{item}</span>
+                  <div key={idx} className="flex items-start gap-3 lg:gap-4">
+                    <CheckCircle2 className="w-5 h-5 lg:w-6 lg:h-6 text-[#00C853] shrink-0 mt-0.5" />
+                    <span className="text-base md:text-lg text-slate-300 font-light">{item}</span>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-8 pt-8 border-t border-white/10">
-                <p className="text-xl font-medium text-white italic">
-                  "Se eu, saindo de Fortaleza e aprendendo inglês sozinha e sem nenhuma orientação, consegui... Por que você, que é dedicado e terá um passo a passo pra te ajudar, não conseguiria?"
+              <div className="mt-8 pt-8 border-t border-white/10 text-center lg:text-left">
+                <p className="text-lg lg:text-xl font-medium text-white italic">
+                  "Eu não tinha um mapa pronto. Tive que descobrir tudo sozinha."
                 </p>
               </div>
             </div>
@@ -396,7 +401,7 @@ function App() {
               A pergunta que mais recebo é simples: <br /> <span className="text-[#00C853]">"Mas isso funciona para mim?"</span>
             </h2>
             <p className="text-lg text-slate-400 font-medium">
-              Respondo com uma pergunta: <span className="text-[#00C853]">"Você quer ganhar em dólar trabalhando de casa"</span>
+              E a minha resposta é: <span className="text-[#00C853]">"Você quer ganhar em dólar trabalhando de casa?"</span>
             </p>
           </div>
 
@@ -469,7 +474,13 @@ function App() {
 
           <div className="max-w-3xl mx-auto mt-20 text-center px-4">
             <p className="text-xl md:text-2xl text-slate-300 font-medium leading-relaxed">
-              Se você se identificou com isso, <span className="text-white font-bold block mt-2 md:inline md:mt-0">aqui está exatamente o que você vai aprender.</span>
+              Você não precisa descobrir tudo sozinho.
+              <span className="text-white font-bold block mt-3">
+                Eu organizei o caminho que eu gostaria de ter seguido.
+              </span>
+              <span className="text-[#00C853] font-bold block mt-4">
+                Veja tudo o que você vai receber:
+              </span>
             </p>
           </div>
 
@@ -675,7 +686,7 @@ function App() {
               onClick={(e) => { e.preventDefault(); handleCheckoutClick('final'); }}
               className="inline-flex px-12 py-6 bg-[#00C853] hover:bg-[#00E65F] text-[#0B1220] font-extrabold rounded-2xl transition-all duration-300 text-xl items-center justify-center shadow-[0_0_50px_rgba(0,200,83,0.3)] hover:shadow-[0_0_80px_rgba(0,200,83,0.5)] transform hover:-translate-y-1"
             >
-              QUERO ACESSAR O GUIA AGORA
+              QUERO MEU GUIA AGORA
             </a>
           </div>
         </div>
