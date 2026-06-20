@@ -91,11 +91,11 @@ function App() {
             {/* Left Content */}
             <div className={`lg:w-1/2 flex flex-col items-start transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               
-              <h1 className="text-4xl lg:text-[3.5rem] font-bold text-white leading-[1.2] mb-6 tracking-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-4xl xl:text-[3.5rem] font-bold text-white leading-[1.2] mb-4 xl:mb-6 tracking-tight">
                 Aprendi inglês sozinha, consegui uma vaga em uma empresa americana e hoje <span className="text-[#00C853] drop-shadow-[0_0_15px_rgba(0,200,83,0.2)]">recebo em dólar morando no Brasil.</span>
               </h1>
               
-              <p className="text-xl text-slate-400 mb-10 leading-relaxed max-w-xl font-light">
+              <p className="text-lg md:text-xl lg:text-lg xl:text-xl text-slate-400 mb-6 xl:mb-10 leading-relaxed max-w-xl font-light">
                 Organizei todo o caminho que percorri no Guia Trabalhe na Gringa para ajudar outros brasileiros a acessarem oportunidades internacionais sem precisar emigrar.
               </p>
 
@@ -142,36 +142,36 @@ function App() {
                 </div>
 
                 {/* Floating Elements (Story focus) */}
-                <div className="absolute top-4 -right-2 md:-top-6 md:-right-2 z-20 bg-white/5 backdrop-blur-xl border border-white/10 p-2 md:p-4 rounded-xl md:rounded-2xl shadow-2xl animate-bounce" style={{animationDuration: '4s'}}>
-                  <div className="flex items-center gap-2 md:gap-3">
-                    <div className="bg-[#00C853]/20 p-1.5 md:p-2 rounded-lg md:rounded-xl">
-                      <DollarSign className="w-4 h-4 md:w-6 md:h-6 text-[#00C853]" />
+                <div className="absolute top-4 -right-2 md:-top-4 md:-right-4 lg:-top-6 lg:-right-2 z-20 bg-white/5 backdrop-blur-xl border border-white/10 p-2 lg:p-4 rounded-xl lg:rounded-2xl shadow-2xl animate-bounce" style={{animationDuration: '4s'}}>
+                  <div className="flex items-center gap-2 lg:gap-3">
+                    <div className="bg-[#00C853]/20 p-1.5 lg:p-2 rounded-lg lg:rounded-xl">
+                      <DollarSign className="w-4 h-4 lg:w-6 lg:h-6 text-[#00C853]" />
                     </div>
                     <div>
-                      <p className="text-[10px] md:text-xs text-slate-300 font-bold uppercase tracking-wider leading-none mb-0.5 md:mb-0">Moeda Forte</p>
-                      <p className="text-xs md:text-base text-white font-black leading-none md:leading-normal">Receba em USD</p>
+                      <p className="text-[10px] lg:text-xs text-slate-300 font-bold uppercase tracking-wider leading-none mb-0.5 lg:mb-0">Moeda Forte</p>
+                      <p className="text-xs lg:text-base text-white font-black leading-none lg:leading-normal">Receba em USD</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="absolute top-1/2 -left-4 md:-left-12 lg:-left-10 z-20 bg-white/5 backdrop-blur-xl border border-white/10 p-2 md:p-4 rounded-xl md:rounded-2xl shadow-2xl animate-bounce" style={{animationDuration: '5s', animationDelay: '1s'}}>
-                  <div className="flex items-center gap-2 md:gap-3">
-                    <span className="text-xl md:text-3xl leading-none">🇺🇸</span>
+                <div className="absolute top-1/2 -left-4 md:-left-8 lg:-left-10 z-20 bg-white/5 backdrop-blur-xl border border-white/10 p-2 lg:p-4 rounded-xl lg:rounded-2xl shadow-2xl animate-bounce" style={{animationDuration: '5s', animationDelay: '1s'}}>
+                  <div className="flex items-center gap-2 lg:gap-3">
+                    <span className="text-xl lg:text-3xl leading-none">🇺🇸</span>
                     <div>
-                      <p className="text-[10px] md:text-xs text-slate-300 font-bold uppercase tracking-wider leading-none mb-0.5 md:mb-0">Contratos</p>
-                      <p className="text-xs md:text-base text-white font-black leading-none md:leading-normal">EUA & Global</p>
+                      <p className="text-[10px] lg:text-xs text-slate-300 font-bold uppercase tracking-wider leading-none mb-0.5 lg:mb-0">Contratos</p>
+                      <p className="text-xs lg:text-base text-white font-black leading-none lg:leading-normal">EUA & Global</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="absolute bottom-6 -right-2 md:bottom-10 md:-right-4 lg:-right-6 z-20 bg-white/5 backdrop-blur-xl border border-white/10 p-2 md:p-4 rounded-xl md:rounded-2xl shadow-2xl animate-bounce" style={{animationDuration: '4.5s', animationDelay: '0.5s'}}>
-                  <div className="flex items-center gap-2 md:gap-3">
-                    <div className="bg-blue-500/20 p-1.5 md:p-2 rounded-lg md:rounded-xl">
-                      <Laptop className="w-4 h-4 md:w-6 md:h-6 text-blue-400" />
+                <div className="absolute bottom-6 -right-2 md:bottom-8 md:-right-6 lg:-right-6 z-20 bg-white/5 backdrop-blur-xl border border-white/10 p-2 lg:p-4 rounded-xl lg:rounded-2xl shadow-2xl animate-bounce" style={{animationDuration: '4.5s', animationDelay: '0.5s'}}>
+                  <div className="flex items-center gap-2 lg:gap-3">
+                    <div className="bg-blue-500/20 p-1.5 lg:p-2 rounded-lg lg:rounded-xl">
+                      <Laptop className="w-4 h-4 lg:w-6 lg:h-6 text-blue-400" />
                     </div>
                     <div>
-                      <p className="text-[10px] md:text-xs text-slate-300 font-bold uppercase tracking-wider leading-none mb-0.5 md:mb-0">Modelo</p>
-                      <p className="text-xs md:text-base text-white font-black leading-none md:leading-normal">100% Remoto</p>
+                      <p className="text-[10px] lg:text-xs text-slate-300 font-bold uppercase tracking-wider leading-none mb-0.5 lg:mb-0">Modelo</p>
+                      <p className="text-xs lg:text-base text-white font-black leading-none lg:leading-normal">100% Remoto</p>
                     </div>
                   </div>
                 </div>
@@ -266,12 +266,12 @@ function App() {
           <div className="max-w-5xl mx-auto bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/10">
             <div className="flex flex-col items-center justify-center space-y-2">
               <Heart className="w-8 h-8 text-[#00C853] mb-2" />
-              <span className="text-3xl lg:text-4xl font-bold text-white">+11.000</span>
+              <span className="text-3xl lg:text-4xl font-bold text-white">+14.000</span>
               <span className="text-sm text-slate-400 font-medium uppercase tracking-widest">Curtidas</span>
             </div>
             <div className="flex flex-col items-center justify-center space-y-2">
               <MessageCircle className="w-8 h-8 text-[#00C853] mb-2" />
-              <span className="text-3xl lg:text-4xl font-bold text-white">+430</span>
+              <span className="text-3xl lg:text-4xl font-bold text-white">+530</span>
               <span className="text-sm text-slate-400 font-medium uppercase tracking-widest">Comentários</span>
             </div>
             <div className="flex flex-col items-center justify-center space-y-2">
