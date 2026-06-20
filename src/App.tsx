@@ -126,9 +126,9 @@ function App() {
               {/* Discrete Green Glow */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[#00C853]/20 blur-[120px] rounded-full z-0 pointer-events-none"></div>
               
-              <div className="relative z-10">
+              <div className="relative z-10 w-[90%] sm:w-[80%] lg:w-[90%] xl:w-[85%] mx-auto">
                 {/* Main Image Mask/Container */}
-                <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-[#071426] group lg:max-h-[70vh] xl:max-h-[75vh]">
+                <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-[#071426] group lg:max-h-[65vh] xl:max-h-[70vh]">
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0B1220] via-transparent to-transparent z-10"></div>
                   <img 
                     src={victoriaHeroImg}
@@ -142,7 +142,7 @@ function App() {
                 </div>
 
                 {/* Floating Elements (Story focus) */}
-                <div className="absolute top-4 right-4 md:-top-6 md:-right-6 z-20 bg-white/5 backdrop-blur-xl border border-white/10 p-2 md:p-4 rounded-xl md:rounded-2xl shadow-2xl animate-bounce" style={{animationDuration: '4s'}}>
+                <div className="absolute top-4 -right-2 md:-top-6 md:-right-2 z-20 bg-white/5 backdrop-blur-xl border border-white/10 p-2 md:p-4 rounded-xl md:rounded-2xl shadow-2xl animate-bounce" style={{animationDuration: '4s'}}>
                   <div className="flex items-center gap-2 md:gap-3">
                     <div className="bg-[#00C853]/20 p-1.5 md:p-2 rounded-lg md:rounded-xl">
                       <DollarSign className="w-4 h-4 md:w-6 md:h-6 text-[#00C853]" />
@@ -154,7 +154,7 @@ function App() {
                   </div>
                 </div>
 
-                <div className="absolute top-1/2 left-4 md:-left-16 lg:-left-20 z-20 bg-white/5 backdrop-blur-xl border border-white/10 p-2 md:p-4 rounded-xl md:rounded-2xl shadow-2xl animate-bounce" style={{animationDuration: '5s', animationDelay: '1s'}}>
+                <div className="absolute top-1/2 -left-4 md:-left-12 lg:-left-10 z-20 bg-white/5 backdrop-blur-xl border border-white/10 p-2 md:p-4 rounded-xl md:rounded-2xl shadow-2xl animate-bounce" style={{animationDuration: '5s', animationDelay: '1s'}}>
                   <div className="flex items-center gap-2 md:gap-3">
                     <span className="text-xl md:text-3xl leading-none">🇺🇸</span>
                     <div>
@@ -164,7 +164,7 @@ function App() {
                   </div>
                 </div>
 
-                <div className="absolute bottom-6 right-4 md:bottom-10 md:-right-12 lg:-right-16 z-20 bg-white/5 backdrop-blur-xl border border-white/10 p-2 md:p-4 rounded-xl md:rounded-2xl shadow-2xl animate-bounce" style={{animationDuration: '4.5s', animationDelay: '0.5s'}}>
+                <div className="absolute bottom-6 -right-2 md:bottom-10 md:-right-4 lg:-right-6 z-20 bg-white/5 backdrop-blur-xl border border-white/10 p-2 md:p-4 rounded-xl md:rounded-2xl shadow-2xl animate-bounce" style={{animationDuration: '4.5s', animationDelay: '0.5s'}}>
                   <div className="flex items-center gap-2 md:gap-3">
                     <div className="bg-blue-500/20 p-1.5 md:p-2 rounded-lg md:rounded-xl">
                       <Laptop className="w-4 h-4 md:w-6 md:h-6 text-blue-400" />
