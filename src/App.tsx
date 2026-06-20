@@ -678,7 +678,7 @@ function App() {
               A história que eu contei no Instagram <span className="text-[#00C853]">também pode ser a sua.</span>
             </h2>
             <p className="text-xl text-slate-400 font-light mb-12 max-w-2xl mx-auto">
-              Deixe de apenas assistir os outros mudarem de vida e venha descobrir como é ser valorizado pelo mercado internacional sem precisar sair de casa.
+              Uma vaga certa pode mudar completamente sua renda, sua carreira e as possibilidades que você enxerga para o seu futuro.
             </p>
 
             <a 
